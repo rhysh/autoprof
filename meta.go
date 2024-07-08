@@ -37,7 +37,7 @@ func generateArchiveMeta() (*ArchiveMeta, error) {
 	}
 
 	if info, ok := debug.ReadBuildInfo(); ok {
-		meta.Main = info.Main.Path
+		meta.Main = info.Path
 		meta.Revision = info.Main.Version
 	}
 
